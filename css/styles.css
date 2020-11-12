@@ -1,0 +1,306 @@
+*{                               /*Este asterisco indica que se aplicara a todo el html*/
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+  
+}
+
+/* se mueve por themes
+body{
+    background: url("../img/hexagonos.jpg"); */ /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
+/*    background-attachment: fixed;     */         /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+/*
+}*/
+
+#global{
+    width: 65%;
+    color: white;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 25px;
+    background: rgb(0, 0, 0);
+  /*  box-shadow: 0px 0px 60px rgb(251, 255, 1);*/  /* se va por el theme*/ 
+}
+
+#logo{
+    font-family: "Verdana", "Arial";
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 75px;
+  /*  background: purple;   esta propiedaas se quita de aqui para hacer los themes*/
+    color: white;
+    text-align: center;
+    width: 385px;
+    height: 80px;
+    margin-bottom: 20px;
+    float: left;
+    text-transform: uppercase;
+
+}
+
+#menu{
+    font-family: Helvetica, Arial;
+    background: rgba(97, 92, 92, 0.671);
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+/* estas lineas se mueven por los themes
+#menu ul li:hover{
+    background: purple;
+}
+*/
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#posts{
+    width: 65%;
+    float: left;
+    font-family: Helvetica, Arial;
+}
+
+.post{
+    padding: 7px;
+}
+
+h2{
+    font-family: Helvetica, Arial;
+    font-size: 30px;
+    color: rgb(146, 141, 141);
+    
+}
+
+.post .date{
+    display: block;
+    color: rgb(235, 225, 225);
+    margin-top: 5px;
+}
+
+.post p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    line-height: 20px;
+    text-align: justify;
+
+}
+
+.button-more{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+ /*   background: purple;    se mueve por theme*/
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+#sidebar{
+    font-family: Helvetica, Arial;
+    width: 31%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: rgb(168, 166, 166);
+    background: url("../img/lineas2.jpg") repeat-x;
+}
+
+#sidebar h4 span{
+    background: rgb(0, 0, 0); 
+}
+
+#sidebar img{
+    width: 100%;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+select{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+  /*  box-shadow: 0px 0px 2px gray; esta linea puede ser una opcion*/
+    margin-top: 5px;
+}
+
+form input[type="submit"]{
+  /*  background: purple;   se fue a themes*/  
+    padding: 7px;
+    border: 0px solid;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+form label{
+    display: block;
+}
+
+footer{
+    font-family: Helvetica, Arial;
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0px auto;
+    width: 65.5%; /* es el mismo que en global*/
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    line-height: 47px;
+
+}
+
+.bx-wrapper, .bx-viewport{
+    height: 400px !important;
+   
+}
+
+#slider{
+   background: red;
+   
+}
+
+#selector-theme{
+    position: fixed;
+    top: 40%;
+    background:rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+
+#to-purple,
+#to-azul,
+#to-pink{
+    width: 25px;
+    height: 25px;
+    border:1px solid rgb(43, 255, 0);
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-purple{
+    background: url(../img/purple.png );
+    background-size: 25px;
+
+}
+
+#to-azul{
+    background: url(../img/azul.png );
+    background-size: 25px;
+}
+
+#to-pink{
+    background: url(../img/pink.png );
+    background-size: 25px;
+}
+
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon{
+    margin-top: 20px;
+}
+
+#reloj{
+    font-size: 40px;
+    font-weight: bold;
+   
+   
+    font-family: Helvetica, Arial;
+    color: rgba(252, 0, 0, 0.63);
+    /*border: 5px dashed white;*/
+    width: 300px;
+    height: 50px;
+    padding: 100px;
+    padding-top: 85px;
+    padding-left: 125px;
+    margin:  0px;
+    background: url(../img/reloj03.jpg);
+background-size: 70%;
+background-repeat: no-repeat;
+}
+
+
+#form_contact{
+    width: 50%;
+    margin-top: 15px;
+    font-family: Helvetica, Arial;
+
+}
+
+#form_contact label{
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+}
+
+#sub{
+    display: block;
+    margin-top: 5px;
+}
+
+.form-error{
+    float: left;
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: oblique;
+    background: white;
+    color: red;
+    padding: 15px;
+    border-radius: 5px;
+    border: solid 3px;
+    border-color: gray;
+}
+

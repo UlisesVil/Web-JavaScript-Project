@@ -1,0 +1,32 @@
+body{
+    background: url("../img/hexagonos.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
+    background-attachment: fixed;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+
+}
+
+#global{
+   
+    box-shadow: 0px 0px 60px rgb(251, 255, 1);
+}
+
+#logo{
+   
+    background: purple;
+    
+}
+
+#menu ul li:hover{
+    background: purple;
+}
+
+.button-more{
+   
+    background: purple;
+    
+    
+}
+    
+form input[type="submit"]{
+    background: purple;
+    
+}

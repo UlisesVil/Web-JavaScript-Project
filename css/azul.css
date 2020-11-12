@@ -1,0 +1,32 @@
+body{
+    background: url("../img/liquid.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
+    background-size: cover;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+
+}
+
+#global{
+   
+    box-shadow: 0px 0px 100px rgb(5, 1, 255);
+}
+
+#logo{
+   
+    background: rgb(6, 3, 160)0;
+    
+}
+
+#menu ul li:hover{
+    background: rgb(6, 3, 160)0;
+}
+
+.button-more{
+   
+    background: rgb(6, 3, 160)0;
+    
+    
+}
+    
+form input[type="submit"]{
+    background: rgb(6, 3, 160)0;
+    
+}
