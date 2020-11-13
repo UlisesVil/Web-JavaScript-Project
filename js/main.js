@@ -1,4 +1,5 @@
-$(document).ready(function(){
+//$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
+$(function(){
 
 
         //Slider
