@@ -48,17 +48,20 @@ body{
     width: 100%;
     text-transform: uppercase;
     margin-bottom: 20px;
+    /*border: 1px solid red;*/
 }
 
 #menu ul{
     line-height: 46px;
     list-style: none;
+    /*border: 1px solid rgb(247, 247, 247);*/
 }
 
 #menu ul li{
     height: 46px;
     display: inline-block;
     transition: all 300ms;
+    /*border: 1px solid red;*/
 }
 /* estas lineas se mueven por los themes
 #menu ul li:hover{
@@ -199,12 +202,18 @@ footer{
    
 }
 
+.bxslider{
+    top: -250px;
+}
+
 #selector-theme{
     position: fixed;
-    top: 40%;
+    top: 243px;
     background:rgba(51, 51, 51, 0.5);
-    width: 50px;
-    height: 100px;
+    width: 60px;
+    height: auto;
+    color: white;
+    text-align: center;
 }
 
 #to-purple,
@@ -212,7 +221,7 @@ footer{
 #to-pink{
     width: 25px;
     height: 25px;
-    border:1px solid rgb(43, 255, 0);
+    border:1px solid rgb(0, 0, 0);
     display: block;
     margin: 0px auto;
     margin-top: 5px;
@@ -247,6 +256,7 @@ footer{
     width: 60%;
     float: left;
     margin-top: 40px;
+    text-align: center;
 }
 
 #acordeon{
@@ -304,3 +314,13 @@ background-repeat: no-repeat;
     border-color: gray;
 }
 
+#logout{
+    text-decoration: none;
+    color: red;
+}
+
+
+.imgArticleCenter{
+    width: 80%;
+    margin: 30px auto;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="css/purple.css"/>-->
+    
+    <!--jQuery-->               <!--esta es la version en linea y sin archivo--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
+    <script type="text/javaScript" src="JS/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    
+<!--Form Validator via cdn http://www.formvalidator.net/  agregar el http: en la linea de abajo-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</head>
+<body>
+
+    <div id="selector-theme">
+        <div id="to-purple"></div>
+        <div id="to-azul"></div>
+        <div id="to-pink"></div>
+        
+    </div>
+
+    <section id="global">
+
+        <!--Cabecera-->
+            <header>
+                <div id="logo">
+                    <h1>Proyecto JS</h1>
+                </div>
+                <div class="clearfix">
+                </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
+
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="reloj.html">Reloj</a></li>
+                        <li><a href="about.html">Sobre mi</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        
+            
+            <!--Contenido-->
+
+            <section id="content">
+                <div id="box">
+
+            <!--Cargar Formulario de contacto-->  
+                    
+                    <h2>Articulo 04</h2>
+
+                    
+                    
+                </div>
+
+                <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
+                    <div id="about">
+                        <h4><span>¿Quien Soy?</span></h4>
+                        <img src="img/gato.jpg"/>
+                        <p>
+                            turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                        </p>
+                    </div>
+
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <label for="name">Nombre</label>
+                            <input id="form_name" type="text" name="name"/>
+
+                            <label for="email">E-mail</label>
+                            <input id="form_email" type="email" name="email"/>
+
+                            <label for="password">Contraseña</label>
+                            <input id="form_password" type="password" name="password"/>
+
+                            <input type="submit" value="Entrar"/>
+                        </form>
+                    </div>
+
+                </aside>
+
+                <div class="clearfix">  <!--Este div se agrega para arreglar la posicion de los articulos y mantener el footer por debajo y no a un lado-->
+
+                </div>
+
+
+            </section>
+
+    </section>
+
+    <footer id="footer">
+               Master de Java Script 
+
+               <a href="#" class="subir">Ir Arriba</a>
+    </footer>
+
+    
+</body>
+</html>
