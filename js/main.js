@@ -1,6 +1,6 @@
 //$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
-$(function(){
-
+//$(function(){
+window.addEventListener("load",function(){
 
         //Slider
     if(window.location.href.indexOf("index")> -1){
