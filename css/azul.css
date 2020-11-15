@@ -1,32 +1,38 @@
 body{
     background: url("../img/liquid.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
-    background-size: cover;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+    background-attachment: fixed;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+    background-size: cover;             /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
 
 }
 
 #global{
    
-    box-shadow: 0px 0px 100px rgb(5, 1, 255);
+    box-shadow: 0px 0px 20px rgb(5, 1, 255);
 }
 
 #logo{
    
-    background: rgb(6, 3, 160)0;
+    background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
     
 }
+#menu{
+    background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
+}
+
 
 #menu ul li:hover{
-    background: rgb(6, 3, 160)0;
+    background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
+    border: 1px solid black;
 }
 
 .button-more{
    
-    background: rgb(6, 3, 160)0;
+    background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
     
     
 }
     
 form input[type="submit"]{
-    background: rgb(6, 3, 160)0;
+    background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
     
 }

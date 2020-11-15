@@ -10,6 +10,8 @@
     padding: 0px;
 }
 
+
+
 .clearfix{
     float: none;
     clear: both;
@@ -25,12 +27,18 @@ body{
 
 #global{
     width: 65%;
+    height: fit-content;
     color: white;
     margin: 0px auto;
     margin-top: 30px;
     padding: 25px;
     background: rgb(0, 0, 0);
   /*  box-shadow: 0px 0px 60px rgb(251, 255, 1);*/  /* se va por el theme*/ 
+}
+
+header{
+    display: flex;
+    flex-direction: column;
 }
 
 #logo{
@@ -43,23 +51,29 @@ body{
     text-align: center;
     width: 385px;
     height: 80px;
-    margin-bottom: 20px;
-    float: left;
+    margin: 20px auto 20px;
     text-transform: uppercase;
+    border-radius: 10px;
 
 }
 
 #menu{
     font-family: Helvetica, Arial;
-    background: rgba(97, 92, 92, 0.671);
-    width: 100%;
+    
     text-transform: uppercase;
     margin-bottom: 20px;
+    border-radius: 10px;
+    height: 30px;
+    /*border: 1px solid red;*/
+}
+#menu ul li:hover{
+    
+    height: 30px;
     /*border: 1px solid red;*/
 }
 
 #menu ul{
-    line-height: 46px;
+    line-height: 30px;
     list-style: none;
     /*border: 1px solid rgb(247, 247, 247);*/
 }
@@ -68,6 +82,7 @@ body{
     height: 46px;
     display: inline-block;
     transition: all 300ms;
+    border-radius: 10px;
     /*border: 1px solid red;*/
 }
 /* estas lineas se mueven por los themes
@@ -127,6 +142,7 @@ h2{
     margin-top: 10px;
     width: 70px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 #sidebar{
@@ -200,18 +216,15 @@ footer{
 }
 
 .bx-wrapper, .bx-viewport{
-    height: 300px !important;
+   height: 350px !important;
+   background-color: black !important;
+    /*height: fit-content !important;*/
    
 }
 
-#slider{
-   background: red;
-   
-}
 
-.bxslider{
-    top: -250px;
-}
+
+
 
 #selector-theme{
     position: fixed;
@@ -264,7 +277,7 @@ footer{
     float: left;
     margin-top: 40px;
     text-align: justify;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 #acordeon{
@@ -273,7 +286,7 @@ footer{
 
 #reloj{
     width: 100%;
-    min-width: 390px;
+    min-width: 200px;
     display: flex;
     align-items: center;
     height: 400px;
@@ -288,13 +301,13 @@ footer{
     font-size: 80px;
     font-style: italic;
     font-weight: bolder;
-    justify-content: center;
+    justify-content: center; 
     
 }
 
 
 #form_contact{
-    width: 50%;
+    width: 100%;
     margin-top: 15px;
     font-family: Helvetica, Arial;
 
@@ -341,3 +354,81 @@ h3{
 }
 
 
+@media screen and (max-width: 1000px) {
+
+   .bx-wrapper, .bx-viewport{
+        height: fit-content !important;
+    }
+
+}
+
+@media screen and (max-width: 825px) {
+    #menu{
+       display: flex;
+       flex-direction: column;
+       width: 150px;
+       height: 175px;
+       padding-top: 10px;
+    }
+ 
+}
+
+@media screen and (max-width: 600px) {
+
+    #logo{
+        width: 300px;
+        font-size: 20px;
+    }
+
+    
+}    
+
+@media screen and (max-width: 900px) {
+
+    
+
+    #content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    #login{
+        
+        width: 100%;
+        /*border: 1px solid red;*/
+       
+        
+    }
+    #login2{
+        width: 100%;
+        /*border: 1px solid red;*/
+        text-align: left;
+    }
+
+    #posts{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #box{
+        width: 100%;
+        /*height: 400px;*/
+    }
+
+    #form_contact{
+        width: 100%;
+        /*border: 1px solid red;*/
+    }
+
+    #sidebar img{
+        width: 300px;
+    }
+}    
