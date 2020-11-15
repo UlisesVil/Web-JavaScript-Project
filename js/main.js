@@ -142,9 +142,9 @@ window.addEventListener("load",function(){
     let form_name = localStorage.getItem("form_name");
     
     if(form_name !=null && form_name !="undefined"){
-        let about_parrafo = $("#about p");
+        let about_parrafo = $("#identity");
         
-        about_parrafo.html("<br/><strong>Bienvenido, "+" "+form_name + "  " +"</strong>"+"<br/>");
+        about_parrafo.html("<br/><strong>Bienvenido, "+" "+form_name + "  " +"</strong>"+"<br/>"+"<br/>");
         about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
             
         $("#login").hide();

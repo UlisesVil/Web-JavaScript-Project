@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'calculator';
+    src: url('../fonts/Calculator.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{                               /*Este asterisco indica que se aplicara a todo el html*/
     margin: 0px;
     padding: 0px;
@@ -91,7 +98,7 @@ body{
 h2{
     font-family: Helvetica, Arial;
     font-size: 30px;
-    color: rgb(146, 141, 141);
+    color: rgb(255, 255, 255);
     
 }
 
@@ -129,7 +136,7 @@ h2{
 }
 
 #sidebar h4{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
     line-height: 10px;
@@ -256,7 +263,8 @@ footer{
     width: 60%;
     float: left;
     margin-top: 40px;
-    text-align: center;
+    text-align: justify;
+    border: 1px solid red;
 }
 
 #acordeon{
@@ -264,22 +272,24 @@ footer{
 }
 
 #reloj{
-    font-size: 40px;
-    font-weight: bold;
-   
-   
-    font-family: Helvetica, Arial;
-    color: rgba(252, 0, 0, 0.63);
-    /*border: 5px dashed white;*/
-    width: 300px;
-    height: 50px;
-    padding: 100px;
-    padding-top: 85px;
-    padding-left: 125px;
-    margin:  0px;
+    width: 100%;
+    min-width: 390px;
+    display: flex;
+    align-items: center;
+    height: 400px;
     background: url(../img/reloj03.jpg);
-background-size: 70%;
-background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+
+    font-family: calculator,Helvetica, Arial;
+    color: rgb(252, 0, 0);
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bolder;
+    justify-content: center;
+    
 }
 
 
@@ -319,8 +329,15 @@ background-repeat: no-repeat;
     color: red;
 }
 
+h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
 .imgArticleCenter{
-    width: 80%;
+    display: flex;
+    width: 90%;
     margin: 30px auto;
 }
+
+
