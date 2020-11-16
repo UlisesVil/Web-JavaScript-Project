@@ -23,7 +23,6 @@ body{
 
 #menu ul li:hover{
     background: linear-gradient(94deg, rgba(255,1,141,1) 0%, rgba(0,0,0,1) 100%);
-    border: 1px solid black;
 }
 .button-more{
    

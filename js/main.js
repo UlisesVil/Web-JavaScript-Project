@@ -1,10 +1,10 @@
 //$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
 //$(function(){
 window.addEventListener("load",function(){
-
+console.log(window.location.href.indexOf("index"));
         //Slider
     if(window.location.href.indexOf("index")> -1){
-
+        
         $('.bxslider').bxSlider({
             
             auto: true,

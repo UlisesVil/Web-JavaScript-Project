@@ -69,7 +69,7 @@ header{
 #menu ul li:hover{
     
     height: 30px;
-    /*border: 1px solid red;*/
+    border: none;
 }
 
 #menu ul{
@@ -79,9 +79,9 @@ header{
 }
 
 #menu ul li{
-    height: 46px;
+    height: 30px;
     display: inline-block;
-    transition: all 300ms;
+    /*transition: all 300ms;*/
     border-radius: 10px;
     /*border: 1px solid red;*/
 }
@@ -282,7 +282,12 @@ footer{
 
 #acordeon{
     margin-top: 20px;
+    
 }
+
+
+
+
 
 #reloj{
     width: 100%;
