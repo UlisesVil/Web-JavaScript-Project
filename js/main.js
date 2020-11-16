@@ -1,9 +1,85 @@
 //$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
-//$(function(){
-window.addEventListener("load",function(){
-console.log(window.location.href.indexOf("index"));
-        //Slider
-    if(window.location.href.indexOf("index")> -1){
+//window.addEventListener("load",function(){
+$(function(){
+
+    //Login Falso
+    $("#login form").submit(function(){
+        let form_name = $("#form_name").val();
+        let form_email = $("#form_email").val();
+        let form_password = $("#form_password").val();
+
+        localStorage.setItem("form_name", form_name);
+        localStorage.setItem("form_email", form_email);
+        localStorage.setItem("form_password", form_password);
+    }); 
+
+    let form_name = localStorage.getItem("form_name");
+
+    if(form_name !=null && form_name !="undefined"){
+        let about_parrafo = $("#identity");
+        
+        about_parrafo.html("<br/><strong>Bienvenido, "+" "+form_name + "  " +"</strong>"+"<br/>"+"<br/>");
+        about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
+            
+        $("#login").hide();
+
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+
+    }
+
+
+
+    //Selector de tema
+    let theme = $("#theme");
+    $("#to-purple").click(function(){
+        theme.attr("href", "css/purple.css");
+    });
+
+    $("#to-azul").click(function(){
+        theme.attr("href", "css/azul.css");
+    });
+
+    $("#to-pink").click(function(){
+        theme.attr("href", "css/pink.css");
+    });
+
+    //Acordeon
+    if(window.location.href.indexOf("about")> -1 ){    
+        $("#acordeon").accordion();
+    }
+
+    //Reloj   
+    if(window.location.href.indexOf("reloj")> -1){
+        
+        setInterval(function(){
+            let reloj = moment().format('h:mm:ss');
+            $("#reloj").html(reloj);
+        },200);
+        
+         //copiamos de https://momentjs.com/  el codigo de la fecha
+    } 
+    
+    
+    //Validacion de Formulario seccion Contacto
+    if(window.location.href.indexOf("contact")> -1){
+            
+        $("form input[name='date']").datepicker({
+            dateFormat:'dd-mm-yy'
+        });
+
+        $.validate({
+        lang: 'es',
+        errorMessagePosition: "top",
+        scrollToTopOnError: true 
+        });
+    }
+
+
+    //Slider
+    if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){
         
         $('.bxslider').bxSlider({
             
@@ -16,11 +92,13 @@ console.log(window.location.href.indexOf("index"));
         });
     }    
 
+    
 
 
-        //POST
 
-    if(window.location.href.indexOf("index")> -1){    
+    //POST
+
+    if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){    
         var posts =[
             {
                 title: "Prueba de titulo 1",
@@ -83,114 +161,28 @@ console.log(window.location.href.indexOf("index"));
         $("#posts").append(post);   
 
         });
+    
+
+
+
+
+        
     }
-
-    //Selector de tema
-        let theme = $("#theme");
-        $("#to-purple").click(function(){
-            theme.attr("href", "css/purple.css");
-        });
-
-        $("#to-azul").click(function(){
-            theme.attr("href", "css/azul.css");
-        });
-
-        $("#to-pink").click(function(){
-            theme.attr("href", "css/pink.css");
-        });
-    
-    //Selector de tema
-    let themeArt = $("#themeArt");
-    $("#to-purple").click(function(){
-        themeArt.attr("href", "../css/purple.css");
-    });
-
-    $("#to-azul").click(function(){
-        themeArt.attr("href", "../css/azul.css");
-    });
-
-    $("#to-pink").click(function(){
-        themeArt.attr("href", "../css/pink.css");
-    });
-
-
-    //Scroll arriba de la Web
-
-    $(".subir").click(function(e){
-        e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
         
-        $("html, body").animate({
-            scrollTop: 0              //El cero representa el primer pixel de la pagina
-        },2000);
-        return false;     //agregamos un tiempo para la animacion
-    });
+        //Scroll arriba de la Web
 
-
-
-    //Login Falso
-
-    $("#login form").submit(function(){
-        let form_name = $("#form_name").val();
-        let form_email = $("#form_email").val();
-        let form_password = $("#form_password").val();
-
-        localStorage.setItem("form_name", form_name);
-        localStorage.setItem("form_email", form_email);
-        localStorage.setItem("form_password", form_password);
-    }); 
-
-    let form_name = localStorage.getItem("form_name");
-    
-    if(form_name !=null && form_name !="undefined"){
-        let about_parrafo = $("#identity");
-        
-        about_parrafo.html("<br/><strong>Bienvenido, "+" "+form_name + "  " +"</strong>"+"<br/>"+"<br/>");
-        about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
+        $(".subir").click(function(e){
+            e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
             
-        $("#login").hide();
-
-        $("#logout").click(function(){
-            localStorage.clear();
-            location.reload();
+            $("html, body").animate({
+                scrollTop: 0              //El cero representa el primer pixel de la pagina
+            },2000);
+            return false;     //agregamos un tiempo para la animacion
         });
-
-    }
-
- //Acordeon
-    if(window.location.href.indexOf("about")> -1){    
-        $("#acordeon").accordion();
-    }
-
- //Reloj   
-
-    if(window.location.href.indexOf("reloj")> -1){
-        
-        setInterval(function(){
-            let reloj = moment().format('h:mm:ss');
-            $("#reloj").html(reloj);
-        },1000);
-        
-        
-         //copiamos de https://momentjs.com/  el codigo de la fecha
-    }    
     
 
 
- //Validacion de Formulario seccion Contacto
-
-
-    if(window.location.href.indexOf("contact")> -1){
-        
-        $("form input[name='date']").datepicker({
-            dateFormat:'dd-mm-yy'
-        });
-
-        $.validate({
-           lang: 'es',
-           errorMessagePosition: "top",
-           scrollToTopOnError: true 
-        });
-    }
+    
 
 });
 
