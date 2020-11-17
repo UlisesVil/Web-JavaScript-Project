@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <link id="theme" rel="stylesheet" type="text/css" href="css/purple.css"/>-->
+    <link id="theme" rel="stylesheet" type="text/css" href="css/purple.css"/>
     
-    <!--jQuery-->               <!--esta es la version en linea y sin archivo--> 
+    <!--jQuery--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <!--JQuery UI-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.css">
     <script type="text/javaScript" src="JS/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     
-<!--Form Validator via cdn http://www.formvalidator.net/  agregar el http: en la linea de abajo-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!--Form Validator via cdn http://www.formvalidator.net/  we have to add http: -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <!--Scripts-->
     <script type="text/javascript" src="js/main.js"></script>
@@ -28,117 +30,101 @@
     <div id="selector-theme">
         <p>Themes</p>
         <div id="to-purple"></div>
-        <div id="to-azul"></div>
+        <div id="to-blue"></div>
         <div id="to-pink"></div>
-        
     </div>
 
     <section id="global">
-
         <!--Cabecera-->
-            <header>
-                <div id="logo">
-                    <h1>Project JS</h1>
-                </div>
-                <div class="clearfix">
-                </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
+        <header>
+            <div id="logo">
+                <h1>Project JS</h1>
+            </div>
 
-                <nav id="menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="reloj.html">Reloj</a></li>
-                        <li><a href="about.html">Sobre mi</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <div class="clearfix"></div> 
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
         
             
-            <!--Contenido-->
+        <!--Content-->
+        <section id="content">
 
-            <section id="content">
-                <div id="box">
+            <div id="box">
+                <h2>Contacto</h2>
+                <!--Load Contact Form--> 
+                <form id="form_contact" action="" method="POST">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric"/>
 
-            <!--Cargar Formulario de contacto-->  
-                    
-                    <h2>Contacto</h2>
+                    <label for="surname">Apellidos</label>
+                    <input type="text" name="surname" data-validation="alphanumeric"/>
 
-                    <form id="form_contact" action="" method="POST">
+                    <label>E-mail</label>
+                    <input type="email" name="email"data-validation="email"/>
+
+                    <label for="sex">Sexo</label>
+                    <select name="sex" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+
+                    <label for="date">Fecha de Nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/> <!--Se modifica de acuerdo al calendario de UI-->
+
+                    <label for="years">Edad</label>
+                    <input type="number" name="years" data-validation="number" />
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message"></textarea>
+
+                    <input id="sub" type="submit" value="Enviar"/>
+                </form>
+            </div>
+
+            <aside id="sidebar">
+                <div id="identity"></div>
+
+                <div id="login">
+                    <h4><span>|  Identificate  |</span></h4>
+                    <form id=login2>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" data-validation="alphanumeric"/>
+                        <input id="form_name" type="text" name="name"/>
 
-                        <label for="surname">Apellidos</label>
-                        <input type="text" name="surname" data-validation="alphanumeric"/>
+                        <label for="email">E-mail</label>
+                        <input id="form_email" type="email" name="email"/>
 
-                        <label>E-mail</label>
-                        <input type="email" name="email"data-validation="email"/>
+                        <label for="password">Contraseña</label>
+                        <input id="form_password" type="password" name="password"/> 
 
-                        <label for="sex">Sexo</label>
-                        <select name="sex" data-validation="required">
-                            <option value="men">Hombre</option>
-                            <option value="woman">Mujer</option>
-                        </select>
-
-                        <label for="date">Fecha de Nacimiento</label>
-                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/> <!--Se modifica de acuerdo al calendario de UI-->
-
-                        <label for="years">Edad</label>
-                        <input type="number" name="years" data-validation="number" />
-
-                        <label for="message">Mensaje</label>
-                        <textarea name="message"></textarea>
-
-                        <input id="sub" type="submit" value="Enviar"/>
-
+                        <input type="submit" value="Entrar"/>
                     </form>
-                    
                 </div>
 
-                <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
-                    <div id="identity"></div>
-
-                    <div id="login">
-                        <h4><span>|  Identificate  |</span></h4>
-                        <form id=login2>
-                            <label for="name">Nombre</label>
-                            <input id="form_name" type="text" name="name"/>
-
-                            <label for="email">E-mail</label>
-                            <input id="form_email" type="email" name="email"/>
-
-                            <label for="password">Contraseña</label>
-                            <input id="form_password" type="password" name="password"/> 
-
-                            <input type="submit" value="Entrar"/>
-                        </form>
-                    </div>
-
-                    <div id="about">
-                        <h4><span>|  ¿Quien Soy?  |</span></h4>
-                        <img src="img/gato.jpg"/>
-                        <p>
-                            turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
-                        </p>
-                    </div>
-
-                </aside>
-
-                <div class="clearfix">  <!--Este div se agrega para arreglar la posicion de los articulos y mantener el footer por debajo y no a un lado-->
-
+                <div id="about">
+                    <h4><span>|  ¿Quien Soy?  |</span></h4>
+                    <img src="img/gato.jpg"/>
+                    <p>
+                        turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                    </p>
                 </div>
+            </aside>
 
-
-            </section>
-
+            <div class="clearfix"></div>
+        </section>
     </section>
 
     <footer id="footer">
                Master de Java Script 
-
                <a href="#" class="subir">Ir Arriba</a>
     </footer>
-
-    
 </body>
 </html>

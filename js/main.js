@@ -2,7 +2,7 @@
 //window.addEventListener("load",function(){
 $(function(){
 
-    //Login Falso
+    //Fake Login
     $("#login form").submit(function(){
         let form_name = $("#form_name").val();
         let form_email = $("#form_email").val();
@@ -35,17 +35,17 @@ $(function(){
     let themeArt = $("#themeArt");
     $("#to-purple").click(function(){
         theme.attr("href", "css/purple.css");
-        themeArt.attr("href", "css/purple.css");
+        themeArt.attr("href", "../css/purple.css");
     });
 
-    $("#to-azul").click(function(){
-        theme.attr("href", "css/azul.css");
-        themeArt.attr("href", "css/azul.css");
+    $("#to-blue").click(function(){
+        theme.attr("href", "css/blue.css");
+        themeArt.attr("href", "../css/blue.css");
     });
 
     $("#to-pink").click(function(){
         theme.attr("href", "css/pink.css");
-        themeArt.attr("href", "css/pink.css");
+        themeArt.attr("href", "../css/pink.css");
     });
     
 
@@ -62,11 +62,11 @@ $(function(){
             let reloj = moment().format('h:mm:ss');
             $("#reloj").html(reloj);
         },200);
-        //copiamos de https://momentjs.com/  el codigo de la fecha
+        //copy from https://momentjs.com/  format date
     } 
     
     
-    //Validacion de Formulario seccion Contacto
+    //Form Validation Contact Section
     if(window.location.href.indexOf("contact")> -1){
             
         $("form input[name='date']").datepicker({

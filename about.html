@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <!--Estilos CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link id="theme" rel="stylesheet" type="text/css" href="css/purple.css"/>
     
-    <!--jQuery-->               <!--esta es la version en linea y sin archivo--> 
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 
     <!--JQuery UI-->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!--agregamos el https:// al codigo original para que funcione-->
-    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"><!--we have to add https:// -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
+    <!--JQuery UI download version-->
     <!--<link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">-->  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
     <!--<link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">-->  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
     <!--<link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.css">-->  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
@@ -30,114 +32,104 @@
     <div id="selector-theme">
         <p>Themes</p>
         <div id="to-purple"></div>
-        <div id="to-azul"></div>
+        <div id="to-blue"></div>
         <div id="to-pink"></div>
-        
     </div>
 
     <section id="global">
 
         <!--Cabecera-->
-            <header>
-                <div id="logo">
-                    <h1>Project JS</h1>
-                </div>
-                <div class="clearfix">
-                </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
+        <header>
+            <div id="logo">
+                <h1>Project JS</h1>
+            </div>
+            <div class="clearfix">
+            </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
 
-                <nav id="menu">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="reloj.html">Reloj</a></li>
-                        <li><a href="about.html">Sobre mi</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                    </ul>
-                </nav>
-                
-            </header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reloj.html">Reloj</a></li>
+                    <li><a href="about.html">Sobre mi</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            
+        </header>
         
             
-            <!--Contenido-->
+        <!--Contenido-->
 
-            <section id="content">
-                <div id="box">
+        <section id="content">
 
-            <!--Cargar Acordeon-->  
+            <div id="box">
+                <!--Cargar Acordeon-->  
                 <h2>Sobre Mi</h2>    
-                    <div id="acordeon">
-                        <h3>Quien Soy?</h3>
-                        <div>
-                            <p>
-                                turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
-                            </p>
-                        </div>
-
-                        <h3>Nuestros Servicios</h3>
-                        <div>
-                            <p>
-                                turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
-                            </p>
-                        </div>
-
-                        <h3>Nuestros Clientes</h3>
-                        <div>
-                            <p>
-                                turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
-                            </p>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
-                    <div id="identity"></div>
-
-                    <div id="login">
-                        <h4><span>|  Identificate  |</span></h4>
-                        <form id=login2>
-                            <label for="name">Nombre</label>
-                            <input id="form_name" type="text" name="name"/>
-
-                            <label for="email">E-mail</label>
-                            <input id="form_email" type="email" name="email"/>
-
-                            <label for="password">Contraseña</label>
-                            <input id="form_password" type="password" name="password"/>
-
-                            <input type="submit" value="Entrar"/>
-                        </form>
-                    </div>
-
-                    <div id="about">
-                        <h4><span>|  ¿Quien Soy?  |</span></h4>
-                        <img src="img/gato.jpg"/>
+                <div id="acordeon">
+                    <h3>Quien Soy?</h3>
+                    <div>
                         <p>
                             turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
                         </p>
                     </div>
 
-                </aside>
+                    <h3>Nuestros Servicios</h3>
+                    <div>
+                        <p>
+                            turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                        </p>
+                    </div>
 
-                <div class="clearfix">  <!--Este div se agrega para arreglar la posicion de los articulos y mantener el footer por debajo y no a un lado-->
+                    <h3>Nuestros Clientes</h3>
+                    <div>
+                        <p>
+                            turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
+                
+                <div id="identity"></div>
+
+                <div id="login">
+                    <h4><span>|  Identificate  |</span></h4>
+                    <form id=login2>
+                        <label for="name">Nombre</label>
+                        <input id="form_name" type="text" name="name"/>
+
+                        <label for="email">E-mail</label>
+                        <input id="form_email" type="email" name="email"/>
+
+                        <label for="password">Contraseña</label>
+                        <input id="form_password" type="password" name="password"/>
+
+                        <input type="submit" value="Entrar"/>
+                    </form>
                 </div>
 
+                <div id="about">
+                    <h4><span>|  ¿Quien Soy?  |</span></h4>
+                    <img src="img/gato.jpg"/>
+                    <p>
+                        turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                    </p>
+                </div>
+            </aside>
 
-            </section>
-
+            <div class="clearfix"></div>
+        </section>
     </section>
 
     <footer id="footer">
-               Master de Java Script 
-
-               <a href="#" class="subir">Ir Arriba</a>
+        Master de Java Script 
+        <a href="#" class="subir">Ir Arriba</a>
     </footer>
 
-    
 </body>
 </html>

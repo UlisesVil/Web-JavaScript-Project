@@ -8,19 +8,14 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
     <link id="themeArt" rel="stylesheet" type="text/css" href="../css/purple.css"/>
     
-    <!--jQuery-->               <!--esta es la version en linea y sin archivo--> 
+    <!--jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--JQuery UI-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.structure.min.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
-    <link rel="stylesheet" href="JS/jquery-ui-1.12.1/jquery-ui.theme.css">  <!--Este enlace debe ir antes del script de jquery-ui.min.js-->
-    <script type="text/javaScript" src="JS/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-    
-<!--Form Validator via cdn http://www.formvalidator.net/  agregar el http: en la linea de abajo-->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 
     <!--Scripts-->
     <script type="text/javascript" src="../js/main.js"></script>
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/94235d9528.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -28,7 +23,7 @@
     <div id="selector-theme">
         <p>Themes</p>
         <div id="to-purple"></div>
-        <div id="to-azul"></div>
+        <div id="to-blue"></div>
         <div id="to-pink"></div>
         
     </div>
@@ -36,110 +31,111 @@
     <section id="global">
 
         <!--Cabecera-->
-            <header>
-                <div id="logo">
-                    <h1>Proyecto JS</h1>
-                </div>
-                <div class="clearfix">
-                </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
+        <header>
+            <div id="logo">
+                <h1>Project JS</h1>
+            </div>
+            <div class="clearfix">
+            </div>                  <!--Este div se agrega para arreglar la posicion del logo y mantener la lista siguiente por debajo y no a un lado-->
 
-                <nav id="menu">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../reloj.html">Reloj</a></li>
-                        <li><a href="../about.html">Sobre mi</a></li>
-                        <li><a href="../contact.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../reloj.html">Reloj</a></li>
+                    <li><a href="../about.html">Sobre mi</a></li>
+                    <li><a href="../contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
         
             
-            <!--Contenido-->
+        <!--Contenido-->
 
-            <section id="content">
-                <div id="box">
-
-            <!--Cargar Formulario de contacto-->  
+        <section id="content">
+            <div id="box">
                     
-                    <h2>Articulo 04</h2>
+                <h2>Articulo 04</h2>
 
-                    <h3>What is Lorem Ipsum?</h3>
-                    <p class="articleP"> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-                        make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <img class="imgArticleCenter" src="../img/article01.jpg" />
-                    <h3>Why do we use it?</h3>
-                    <p class="articleP">It is a long established fact that a reader will be distracted by the readable content of a page when 
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of 
-                        letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop 
-                        publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 
-                        'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
-                        sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <h3>What is Lorem Ipsum?</h3>
+                <p class="articleP"> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                    Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <img class="imgArticleCenter" src="../img/imgarticle/article04-1.jpg" />
+                <h3>Why do we use it?</h3>
+                <p class="articleP">It is a long established fact that a reader will be distracted by the readable content of a page when 
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of 
+                    letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop 
+                    publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 
+                    'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+                    sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 
-                    <img class="imgArticleCenter" src="../img/article02.jpg" />
-                    <h3>Where does it come from?</h3>
-                    <p class="articleP">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
-                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
-                        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
-                        and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum 
-                        comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
-                        written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line 
-                        of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-                    <img class="imgArticleCenter" src="../img/article03.jpg" />
-                    <p class="articleP">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 
-                        1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied 
-                        by English versions from the 1914 translation by H. Rackham.</p>
-                                        
+                <img class="imgArticleCenter" src="../img/imgarticle/article04-2.jpg" />
+                <h3>Where does it come from?</h3>
+                <p class="articleP">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
+                    literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                    College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, 
+                    and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum 
+                    comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, 
+                    written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line 
+                    of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <img class="imgArticleCenter" src="../img/imgarticle/article04-3.jpg" />
+                <p class="articleP">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied 
+                    by English versions from the 1914 translation by H. Rackham.</p>
+                
+                    
+                <div class="pages">
+                    <div class="prev">
+                        <a href="article03.html"><i class="fas fa-angle-double-left"></i></a><p class="nextp">Prev</p>
+                    </div>
+                    <div class="next">
+                        <p class="nextp">Next</p><a href="article05.html"><i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div> 
+
+            </div>
+
+            <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
+                <div id="identity"></div>
+                <div id="login">
+                    <h4><span>|  Identificate  |</span></h4>
+                    <form id=login2>
+                        <label for="name">Nombre</label>
+                        <input id="form_name" type="text" name="name"/>
+
+                        <label for="email">E-mail</label>
+                        <input id="form_email" type="email" name="email"/>
+
+                        <label for="password">Contraseña</label>
+                        <input id="form_password" type="password" name="password"/>
+
+                        <input type="submit" value="Entrar"/>
+                        
+                    </form>
                 </div>
 
-                <aside id="sidebar"> <!--la etiqueta para una sidebar es un aside-->
-                    <div id="identity"></div>
-                    <div id="login">
-                        <h4><span>|  Identificate  |</span></h4>
-                        <form id=login2>
-                            <label for="name">Nombre</label>
-                            <input id="form_name" type="text" name="name"/>
-
-                            <label for="email">E-mail</label>
-                            <input id="form_email" type="email" name="email"/>
-
-                            <label for="password">Contraseña</label>
-                            <input id="form_password" type="password" name="password"/>
-
-                            <input type="submit" value="Entrar"/>
-                            
-                        </form>
-                    </div>
-
-                    <div id="about">
-                        <h4><span>|  ¿Quien Soy?  |</span></h4>
-                        <img src="../img/gato.jpg"/>
-                        <p>
-                            turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                            Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
-                        </p>
-                       
-                    </div>
-
-                </aside>
-
-                <div class="clearfix">  <!--Este div se agrega para arreglar la posicion de los articulos y mantener el footer por debajo y no a un lado-->
-
+                <div id="about">
+                    <h4><span>|  ¿Quien Soy?  |</span></h4>
+                    <img src="../img/gato.jpg"/>
+                    <p>
+                        turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
+                        Donec quam mi, vulputate a diam tempus, euismod efficitur leo.  
+                    </p>
                 </div>
+            </aside>
+
+                <div class="clearfix"></div>
 
 
-            </section>
+        </section>
 
     </section>
 
     <footer id="footer">
-               Master de Java Script 
-
-               <a href="#" class="subir">Ir Arriba</a>
+        Master de Java Script 
+        <a href="#" class="subir">Ir Arriba</a>
     </footer>
-
-    
 </body>
 </html>
