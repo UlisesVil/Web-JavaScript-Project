@@ -25,394 +25,405 @@
     background: rgb(0, 0, 0);
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-}
-
-#logo{
-    width: 385px;
-    height: 80px;
-    margin: 20px auto 20px;
-    font-family: "Verdana", "Arial";
-    font-size: 28px;
-    letter-spacing: 4px;
-    line-height: 75px;
-    color: white;
-    text-align: center;   
-    text-transform: uppercase;
-    border-radius: 10px;
-}
-
-#menu{
-    height: 30px;
-    font-family: Helvetica, Arial;   
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-#menu ul li:hover{
-    height: 30px;
-    border: none;
-}
-
-#menu ul{
-    line-height: 30px;
-    list-style: none;
-}
-
-#menu ul li{
-    height: 30px;
-    display: inline-block;
-    border-radius: 10px;
-}
-
-#menu a{
-    color: white;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#posts{
-    width: 65%;
-    float: left;
-    font-family: Helvetica, Arial;
-}
-
-.post{
-    padding: 7px;
-}
-
-h2{
-    font-family: Helvetica, Arial;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-}
-
-.post .date{
-    display: block;
-    color: rgb(235, 225, 225);
-    margin-top: 5px;
-}
-
-.post p{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 20px;
-    text-align: justify;
-}
-
-.button-more{
-    display: block;
-    width: 70px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    color: white;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-}
-
-#sidebar{
-    width: 31%;
-    font-family: Helvetica, Arial;
-    float: right;
-}
-
-#sidebar h4{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    line-height: 10px;
-    color: rgb(168, 166, 166);
-    background: url("../img/lineas2.jpg") repeat-x;
-}
-
-#sidebar h4 span{
-    background: rgb(0, 0, 0); 
-}
-
-#sidebar img{
-    width: 100%;
-}
-
-#sidebar p{
-    font-size: 15px;
-    text-align: justify;
-}
-
-form input[type="text"],
-form input[type="password"],
-form input[type="email"],
-form input[type="number"],
-form textarea,
-select{
-    width: 80%;
-    padding: 5px;
-    border-radius: 2px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-
-form input[type="submit"]{  
-    display: block;
-    padding: 7px;
-    border: 0px solid;
-    border-radius: 3px;
-    color: white;
-    cursor: pointer;
-}
-
-form label{
-    display: block;
-}
-
-footer{
-    height: 47px;
-    width: 65.5%;
-    background: rgba(51, 51, 51, 0.70);
-    margin: 0px auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
-    font-family: Helvetica, Arial;
-    color: white;
-    line-height: 47px;
-}
-
-.bx-wrapper, .bx-viewport{
-   height: 350px !important;
-   background-color: black !important;   
-}
-
-#selector-theme{
-    width: 60px;
-    height: auto;
-    position: fixed;
-    top: 243px;
-    background:rgba(51, 51, 51, 0.5);
-    color: white;
-    text-align: center;
-}
-
-#to-purple,
-#to-blue,
-#to-pink{
-    display: block;
-    width: 25px;
-    height: 25px;
-    border:1px solid rgb(0, 0, 0);
-    margin: 0px auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-#to-purple{
-    background: url(../img/purple.png );
-    background-size: 25px;
-}
-
-#to-blue{
-    background: url(../img/blue.png );
-    background-size: 25px;
-}
-
-#to-pink{
-    background: url(../img/pink.png );
-    background-size: 25px;
-}
-
-.subir{
-    display: block;
-    float: right;
-    color: white;
-    text-decoration: none;
-}
-
-#box{
-    width: 60%;
-    float: left;
-    margin-top: 40px;
-    text-align: justify;
-}
-
-#acordeon{
-    margin-top: 20px;
-}
-
-#reloj{
-    display: flex;
-    width: 100%;
-    min-width: 200px;
-    height: 400px;
-    justify-content: center; 
-    align-items: center;
-    background: url(../img/reloj02.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    font-family: calculator,Helvetica, Arial;
-    color: rgb(253, 0, 0);
-    font-size: 80px;
-    font-style: italic;
-    font-weight: bolder;
-}
-
-#form_contact{
-    width: 100%;
-    margin-top: 15px;
-    font-family: Helvetica, Arial;
-}
-
-#form_contact label{
-    width: 100%;
-    display: block;
-    margin-top: 5px;
-}
-
-#sub{
-    display: block;
-    margin-top: 5px;
-}
-
-.form-error{
-    float: left;
-    margin-top: 10px;
-    font-size: 14px;
-    font-style: oblique;
-    background: white;
-    color: red;
-    padding: 15px;
-    border-radius: 5px;
-    border: solid 3px;
-    border-color: gray;
-}
-
-#logout{
-    text-decoration: none;
-    color: red;
-}
-
-h3{
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.imgArticleCenter{
-    display: flex;
-    width: 90%;
-    margin: 30px auto;
-}
-
-.pages{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.fa-angle-double-left{
-    font-size: 40px;
-    float: left;
-}
-
-.fa-angle-double-right{
-    font-size: 40px;
-    float: left;
-}
-
-.prev{
-    margin: 5px;
-}
-.prevp{
-    float: right;
-    padding-top: 12px;
-}
-
-.next{
-    margin: 5px;
-}
-.nextp{
-    float: left;
-    padding-top: 12px;
-}
-
-
-@media screen and (max-width: 1000px) {
-
-   .bx-wrapper, .bx-viewport{
-        height: fit-content !important;
-    }
-
-}
-
-@media screen and (max-width: 900px) {
-
-    #content{
+/*Header*/
+    header{
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-
+        flex-direction: column;
     }
 
-    #sidebar{
-        width: 100%;
-        text-align: center;
+    #logo{
+        width: 385px;
+        height: 80px;
+        margin: 20px auto 20px;
+        font-family: "Verdana", "Arial";
+        font-size: 28px;
+        letter-spacing: 4px;
+        line-height: 75px;
+        color: white;
+        text-align: center;   
+        text-transform: uppercase;
+        border-radius: 10px;
     }
 
-    #login{        
-        width: 100%;       
+    #menu{
+        height: 30px;
+        font-family: Helvetica, Arial;   
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        border-radius: 10px;
     }
 
-    #login2{
-        width: 100%;
-        text-align: left;
+    #menu ul li:hover{
+        height: 30px;
+        border: none;
+    }
+
+    #menu ul{
+        line-height: 30px;
+        list-style: none;
+    }
+
+    #menu ul li{
+        height: 30px;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    #menu a{
+        color: white;
+        text-decoration: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+/*Content*/
+    #box{
+        width: 60%;
+        float: left;
+        margin-top: 40px;
+        text-align: justify;
     }
 
     #posts{
-        width: 100%;
+        width: 65%;
+        float: left;
+        font-family: Helvetica, Arial;
+    }
+
+    .post{
+        padding: 7px;
+    }
+
+    h2{
+        font-family: Helvetica, Arial;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+
+    .post .date{
+        display: block;
+        color: rgb(235, 225, 225);
+        margin-top: 5px;
+    }
+
+    .post p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 20px;
+        text-align: justify;
+    }
+
+    .button-more{
+        display: block;
+        width: 70px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+/*Sidebar*/
+    #sidebar{
+        width: 31%;
+        font-family: Helvetica, Arial;
+        float: right;
+    }
+
+    #sidebar h4{
         margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 10px;
+        color: rgb(168, 166, 166);
+        background: url("../img/lineas2.jpg") repeat-x;
     }
 
-    #box{
-        width: 100%;
-    }
-
-    #form_contact{
-        width: 100%;
+    #sidebar h4 span{
+        background: rgb(0, 0, 0); 
     }
 
     #sidebar img{
-        width: 300px;
+        width: 100%;
     }
-}    
 
-@media screen and (max-width: 825px) {
-    
-    #menu{
-       display: flex;
-       flex-direction: column;
-       width: 150px;
-       height: 175px;
-       padding-top: 10px;
+    #sidebar p{
+        font-size: 15px;
+        text-align: justify;
     }
-}
 
-@media screen and (max-width: 600px) {
-
-    #logo{
-        width: 300px;
-        font-size: 20px;
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="number"],
+    form textarea,
+    select{
+        width: 80%;
+        padding: 5px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        margin-top: 5px;
     }
-}    
+
+    form input[type="submit"]{  
+        display: block;
+        padding: 7px;
+        border: 0px solid;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+
+    form label{
+        display: block;
+    }
+
+/*Footer*/
+    footer{
+        height: 47px;
+        width: 65.5%;
+        background: rgba(51, 51, 51, 0.70);
+        margin: 0px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+        font-family: Helvetica, Arial;
+        color: white;
+        line-height: 47px;
+    }
+
+/*Slider*/
+    .bx-wrapper, .bx-viewport{
+    height: 350px !important;
+    background-color: black !important;   
+    }
+
+/*Themes*/
+    #selector-theme{
+        width: 60px;
+        height: auto;
+        position: fixed;
+        top: 243px;
+        background:rgba(51, 51, 51, 0.5);
+        color: white;
+        text-align: center;
+    }
+
+    #to-purple,
+    #to-blue,
+    #to-pink{
+        display: block;
+        width: 25px;
+        height: 25px;
+        border:1px solid rgb(0, 0, 0);
+        margin: 0px auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+    }
+
+    #to-purple{
+        background: url(../img/purple.png );
+        background-size: 25px;
+    }
+
+    #to-blue{
+        background: url(../img/blue.png );
+        background-size: 25px;
+    }
+
+    #to-pink{
+        background: url(../img/pink.png );
+        background-size: 25px;
+    }
+
+/*Function top*/
+    .subir{
+        display: block;
+        float: right;
+        color: white;
+        text-decoration: none;
+    }
+
+/*Acordeon About*/
+    #acordeon{
+        margin-top: 20px;
+    }
+
+/*Clock*/
+    #reloj{
+        display: flex;
+        width: 100%;
+        min-width: 200px;
+        height: 400px;
+        justify-content: center; 
+        align-items: center;
+        background: url(../img/reloj02.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        font-family: calculator,Helvetica, Arial;
+        color: rgb(253, 0, 0);
+        font-size: 80px;
+        font-style: italic;
+        font-weight: bolder;
+    }
+
+/*Forms*/
+    #form_contact{
+        width: 100%;
+        margin-top: 15px;
+        font-family: Helvetica, Arial;
+    }
+
+    #form_contact label{
+        width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+
+    #sub{
+        display: block;
+        margin-top: 5px;
+    }
+
+    .form-error{
+        float: left;
+        margin-top: 10px;
+        font-size: 14px;
+        font-style: oblique;
+        background: white;
+        color: red;
+        padding: 15px;
+        border-radius: 5px;
+        border: solid 3px;
+        border-color: gray;
+    }
+
+    #logout{
+        text-decoration: none;
+        color: red;
+    }
+
+/*Articles*/
+    h3{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .imgArticleCenter{
+        display: flex;
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .pages{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .fa-angle-double-left{
+        font-size: 40px;
+        float: left;
+    }
+
+    .fa-angle-double-right{
+        font-size: 40px;
+        float: left;
+    }
+
+    .prev{
+        margin: 5px;
+    }
+    .prevp{
+        float: right;
+        padding-top: 12px;
+    }
+
+    .next{
+        margin: 5px;
+    }
+    .nextp{
+        float: left;
+        padding-top: 12px;
+    }
+
+/*Responsive*/
+    @media screen and (max-width: 1000px) {
+
+        .bx-wrapper, .bx-viewport{
+                height: fit-content !important;
+            }
+
+    }
+
+    @media screen and (max-width: 900px) {
+
+        #content{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #sidebar{
+            width: 100%;
+            text-align: center;
+        }
+
+        #login{        
+            width: 100%;       
+        }
+
+        #login2{
+            width: 100%;
+            text-align: left;
+        }
+
+        #posts{
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        #box{
+            width: 100%;
+        }
+
+        #form_contact{
+            width: 100%;
+        }
+
+        #sidebar img{
+            width: 300px;
+        }
+    }    
+
+    @media screen and (max-width: 825px) {
+        
+        #menu{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 175px;
+        padding-top: 10px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+
+        #logo{
+            width: 300px;
+            font-size: 20px;
+        }
+    }    
 
