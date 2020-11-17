@@ -177,6 +177,7 @@ form input[type="text"],
 form input[type="password"],
 form input[type="email"],
 form input[type="number"],
+form textarea,
 select{
     padding: 5px;
     border-radius: 2px;
@@ -299,10 +300,8 @@ footer{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-
-
     font-family: calculator,Helvetica, Arial;
-    color: rgb(252, 0, 0);
+    color: rgb(253, 0, 0);
     font-size: 80px;
     font-style: italic;
     font-weight: bolder;
@@ -389,8 +388,6 @@ h3{
 }    
 
 @media screen and (max-width: 900px) {
-
-    
 
     #content{
         display: flex;

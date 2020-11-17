@@ -27,29 +27,33 @@ $(function(){
             localStorage.clear();
             location.reload();
         });
-
     }
-
 
 
     //Selector de tema
     let theme = $("#theme");
+    let themeArt = $("#themeArt");
     $("#to-purple").click(function(){
         theme.attr("href", "css/purple.css");
+        themeArt.attr("href", "css/purple.css");
     });
 
     $("#to-azul").click(function(){
         theme.attr("href", "css/azul.css");
+        themeArt.attr("href", "css/azul.css");
     });
 
     $("#to-pink").click(function(){
         theme.attr("href", "css/pink.css");
+        themeArt.attr("href", "css/pink.css");
     });
+    
 
     //Acordeon
     if(window.location.href.indexOf("about")> -1 ){    
         $("#acordeon").accordion();
     }
+
 
     //Reloj   
     if(window.location.href.indexOf("reloj")> -1){
@@ -58,8 +62,7 @@ $(function(){
             let reloj = moment().format('h:mm:ss');
             $("#reloj").html(reloj);
         },200);
-        
-         //copiamos de https://momentjs.com/  el codigo de la fecha
+        //copiamos de https://momentjs.com/  el codigo de la fecha
     } 
     
     
@@ -91,9 +94,6 @@ $(function(){
                 
         });
     }    
-
-    
-
 
 
     //POST
@@ -148,61 +148,31 @@ $(function(){
         posts.forEach((item, index) =>{
             let post = `
             <article class="post">
-                            <h2>${item.title}</h2>
-                            <span class="date">${item.date}</span>
-                            <p>
-                                ${item.content}    
-                            </p>
-                            <a href="${item.link}" class="button-more">Leer más</a>
-                        </article>
+                <h2>${item.title}</h2>
+                <span class="date">${item.date}</span>
+                <p>
+                    ${item.content}    
+                </p>
+                <a href="${item.link}" class="button-more">Leer más</a>
+            </article>
             `;
 
 
         $("#posts").append(post);   
 
         });
-    
-
-
-
-
-        
     }
         
-        //Scroll arriba de la Web
+    //Scroll arriba de la Web
 
-        $(".subir").click(function(e){
-            e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
-            
-            $("html, body").animate({
-                scrollTop: 0              //El cero representa el primer pixel de la pagina
-            },2000);
-            return false;     //agregamos un tiempo para la animacion
-        });
-    
-
-
-    
-
+    $(".subir").click(function(e){
+        e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
+        
+        $("html, body").animate({
+            scrollTop: 0              //El cero representa el primer pixel de la pagina
+        },2000);
+        return false;     //agregamos un tiempo para la animacion
+    });
 });
 
-    /*
-    Originalmente se tenia esta plantilla para guia de la construccion del HTML 
-    pero se quitaron para ser sustituidas por el javascript. en la seccion de arriba titulada //POST
-    <article class="post">
-                            <h2>Prueba de Articulo 1</h2>
-                            <span class="date">Fecha de publicacion</span>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Ut nec massa iaculis, sagittis urna et, hendrerit lorem. 
-                                Curabitur pulvinar orci arcu, quis lacinia ante sagittis 
-                                eget. Morbi eget rhoncus turpis. Integer tristique magna 
-                                ac fermentum fermentum. In commodo nisl eros, nec 
-                                eleifend nunc dignissim nec. Phasellus commodo, dui in 
-                                sodales ullamcorper, justo ligula mollis leo, quis maximus 
-                                turpis nisi sodales nisi. Donec mollis vulputate pellentesque. 
-                                Donec quam mi, vulputate a diam tempus, euismod efficitur leo.                        
-                            </p>
-                            <a href="#" class="button-more">Leer más</a>
-                        </article>
-    */
+    
