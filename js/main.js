@@ -65,8 +65,12 @@ $(function(){
 
 
     //Slider
-    if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){
-       
+    let bxsliderArr=$('.bxslider');
+    console.log(bxsliderArr.length);
+    //if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1 ){
+    if(bxsliderArr.length>0){ 
+        console.log($('.bxslider'));
+
         $('.bxslider').bxSlider({
             
             auto: true,
