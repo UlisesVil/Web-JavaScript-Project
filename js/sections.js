@@ -33,10 +33,12 @@ $(function(){
     $("#header").append(header);
     
     let selectorTheme=`
-        <p>Themes</p>
-        <div id="to-purple"></div>
-        <div id="to-blue"></div>
-        <div id="to-pink"></div>
+        <p class="textTheme">Themes</p>
+        <div class="colorContainer">
+            <div id="to-purple"></div>
+            <div id="to-blue"></div>
+            <div id="to-pink"></div>
+        </div>
     `;
     //<div id="selector-theme"></div>
     $('#selector-theme').append(selectorTheme);
@@ -73,7 +75,10 @@ $(function(){
 
     let footer=`
         JavaScript Project 
-        <a href="#" class="subir">Ir Arriba</a>
+        <a href="#" class="top">
+            Top
+            <i class="fas fa-angle-double-up"></i>
+        </a>
     `;
     //<footer id="footer"></footer>
     $('#footer').append(footer);

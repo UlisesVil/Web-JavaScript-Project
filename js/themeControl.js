@@ -59,7 +59,21 @@ $(function(){
         $('.linkContact').addClass('selected');
         $('.linkClock,.linkAbout,.linkMain').removeClass('selected');
     }
-
+/*
+    function animateSelector(){
+        $('#selector-theme').mouseenter(function(){
+            console.log("entrando");
+            $('#selector-theme').addClass('showthemes');
+            $('#selector-theme').removeClass('hidethemes');
+        });
+        $('#selector-theme').mouseleave(function(){
+            console.log("saliendo");
+            $('#selector-theme').addClass('hidethemes');
+            $('#selector-theme').removeClass('showthemes');
+        });
+    }
+    window.addEventListener('mouseover', animateSelector);
+    */
 });
 
 

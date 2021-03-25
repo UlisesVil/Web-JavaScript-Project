@@ -226,13 +226,49 @@
 
 /*Themes*/
     #selector-theme{
-        width: 60px;
+        width: fit-content;
         height: auto;
         position: fixed;
+        display: flex;
+        align-items: center;
+        
+        flex-direction: row-reverse;
         top: 243px;
-        background:rgba(51, 51, 51, 0.5);
+        background:rgb(0, 0, 0);
         color: white;
         text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        left: -36px;
+        border-bottom:  1px solid rgb(183, 0, 255);
+        border-top:  1px solid rgb(183, 0, 255);
+        border-right:  1px solid rgb(183, 0, 255);
+        cursor: pointer;
+        transition: all 1s;
+        /*box-shadow: 0px 0px 5px 5px red;*/
+    }
+
+    #selector-theme:hover{
+        left: 0px;
+        box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
+    }
+
+
+    .colorContainer{
+        width: 26px;
+        margin-left: 10px;
+        /*border: 1px solid red;*/
+    }
+
+    .textTheme{
+        width: 20px;
+        height: fit-content;
+        transform: rotate(-90deg);
+        margin-top: 32px;
+        margin-right: 5px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+        /*border: 1px solid rgb(0, 38, 255);*/
     }
 
     #to-purple,
@@ -246,6 +282,8 @@
         margin-top: 5px;
         margin-bottom: 5px;
         cursor: pointer;
+        transition: all .7s;
+        /*border: 1px solid red;*/
     }
 
     #to-purple{
@@ -262,13 +300,24 @@
         background: url(../img/themes/pink.png );
         background-size: 25px;
     }
+    #to-purple:hover,
+    #to-blue:hover,
+    #to-pink:hover{
+        border: 1px solid rgb(183, 0, 255);
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
+    }
 
 /*Function top*/
-    .subir{
+    .top{
         display: block;
         float: right;
         color: white;
         text-decoration: none;
+    }
+    .top:hover{
+        color: yellowgreen;
+        text-shadow: 3px 3px 5px yellowgreen;
     }
 
 /*Acordeon About*/

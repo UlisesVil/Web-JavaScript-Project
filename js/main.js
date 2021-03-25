@@ -165,7 +165,7 @@ $(function(){
     $('#date').append(date);
 
     //Scroll arriba de la Web
-    $(".subir").click(function(e){
+    $(".top").click(function(e){
         e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
         
         $("html, body").animate({
