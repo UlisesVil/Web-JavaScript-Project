@@ -66,16 +66,17 @@ $(function(){
 
     //Slider
     if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){
-        
-        $('.bxslider').bxSlider({
-            
-            auto: true,
-            autoControls: true,
-            stopAutoOnClick: true,
-            pager: true,
-            slideWidth: 1470
+        if($('.bxslider')){
+            $('.bxslider').bxSlider({
                 
-        });
+                auto: true,
+                autoControls: true,
+                stopAutoOnClick: true,
+                pager: true,
+                slideWidth: 1470
+                    
+            });
+        }
     }    
 
 
