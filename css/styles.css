@@ -35,6 +35,7 @@
         align-self: flex-end;
         width: fit-content;
         text-shadow: 5px 5px 5px white;
+        color: rgb(156, 156, 156);
     }
 
     #logo{
@@ -251,6 +252,7 @@
     #selector-theme:hover{
         left: 0px;
         box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
+        z-index: 9999;
     }
 
 
@@ -494,8 +496,8 @@
     @media screen and (max-width: 600px) {
 
         #logo{
-            width: 300px;
-            font-size: 20px;
+            width: 100%;
+            font-size: 15px;
         }
     }    
 
