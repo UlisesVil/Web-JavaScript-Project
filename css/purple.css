@@ -1,6 +1,7 @@
 body{
-    background: url("../img/hexagonos.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
+    background: url("../img/background/hexagonos.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
     background-attachment: fixed;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
+
 }
 
 #global{   
@@ -19,14 +20,36 @@ body{
     background: linear-gradient(94deg, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+.selected{
+    background: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 10px 5px rgba(128,0,128,1);
+}
+
 .button-more{   
     background: linear-gradient(94deg, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.button-more:hover{   
+    background: linear-gradient(94deg, rgba(161, 0, 161, 0.637) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 0px 10px 4px rgba(128,0,128,1);
+    text-shadow: 3px 3px 3px white;
 }
     
 form input[type="submit"]{
     background: linear-gradient(94deg, rgba(128,0,128,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+form input[type="submit"]:hover{
+    background: linear-gradient(94deg, rgba(161, 0, 161, 0.637) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 0px 10px 4px rgba(128,0,128,1);
+    text-shadow: 3px 3px 3px white;
+}
+
 .fa-angle-double-left, .fa-angle-double-right{
     color:  rgba(128,0,128,1);
+}
+
+.ui-state-active{
+    background: linear-gradient(94deg, rgba(161, 0, 161, 0.637) 0%, rgba(0,0,0,1) 100%) !important;
+    border: none !important;
 }

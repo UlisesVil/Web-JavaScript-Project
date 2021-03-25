@@ -1,6 +1,7 @@
 body{
-    background: url("../img/liquid.jpg");
+    background: url("../img/background/liquid.jpg");
     background-attachment: fixed;
+    background-position: center;
     background-size: cover;
 }
 
@@ -20,15 +21,37 @@ body{
     background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+.selected{
+    background: rgba(0, 0, 0, 0.596);
+    box-shadow: 0px 0px 10px 5px rgb(0, 38, 255);
+}
+
 .button-more{   
     background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.button-more:hover{   
+    background: linear-gradient(94deg, rgba(0, 11, 165, 0.637) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 0px 10px 4px rgba(28,38,186,1);
+    text-shadow: 3px 3px 3px white;
 }
     
 form input[type="submit"]{
     background: linear-gradient(94deg, rgba(28,38,186,1) 0%, rgba(0,0,0,1) 100%);
 }
 
+form input[type="submit"]:hover{
+    background: linear-gradient(94deg, rgba(0, 11, 165, 0.637) 0%, rgba(0,0,0,1) 100%);    box-shadow: 0px 0px 10px 4px rgba(28,38,186,1);
+    box-shadow: 0px 0px 10px 4px rgba(28,38,186,1);
+    text-shadow: 3px 3px 3px white;
+}
+
 .fa-angle-double-left, .fa-angle-double-right{
     color: rgba(28,38,186,1);
+}
+
+.ui-state-active{
+    background: linear-gradient(94deg, rgba(0, 11, 165, 0.637) 0%, rgba(0,0,0,1) 100%) !important;
+    border: none !important;
 }
 

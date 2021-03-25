@@ -1,6 +1,7 @@
 //$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
 //window.addEventListener("load",function(){
 $(function(){
+    
 
     //Fake Login
     $("#login form").submit(function(){
@@ -30,24 +31,6 @@ $(function(){
     }
 
 
-    //Selector de tema
-    let theme = $("#theme");
-    let themeArt = $("#themeArt");
-    $("#to-purple").click(function(){
-        theme.attr("href", "css/purple.css");
-        themeArt.attr("href", "../css/purple.css");
-    });
-
-    $("#to-blue").click(function(){
-        theme.attr("href", "css/blue.css");
-        themeArt.attr("href", "../css/blue.css");
-    });
-
-    $("#to-pink").click(function(){
-        theme.attr("href", "css/pink.css");
-        themeArt.attr("href", "../css/pink.css");
-    });
-    
 
     //Acordeon
     if(window.location.href.indexOf("about")> -1 ){    
@@ -56,11 +39,11 @@ $(function(){
 
 
     //Reloj   
-    if(window.location.href.indexOf("reloj")> -1){
+    if(window.location.href.indexOf("clock")> -1){
         
         setInterval(function(){
-            let reloj = moment().format('h:mm:ss');
-            $("#reloj").html(reloj);
+            let clock = moment().format('h:mm:ss');
+            $("#clock").html(clock);
         },200);
         //copy from https://momentjs.com/  format date
     } 
@@ -101,51 +84,59 @@ $(function(){
     if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){    
         var posts =[
             {
-                title: "Prueba de titulo 1",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 1",
+                date: "Published on: 2021-Jan-02",
                 content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.",
                 link: "articles/article01.html"
             },
             {
-                title: "Prueba de titulo 2",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 2",
+                date: "Published on: 2021-Jan-06",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article02.html"
             },
             {
-                title: "Prueba de titulo 3",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 3",
+                date: "Published on: 2021-Jan-12",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article03.html"
             },
             {
-                title: "Prueba de titulo 4",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 4",
+                date: "Published on: 2021-Jan-14",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article04.html"
             },
             {
-                title: "Prueba de titulo 5",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 5",
+                date: "Published on: 2021-Jan-20",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article05.html"
             },
             {
-                title: "Prueba de titulo 6",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 6",
+                date: "Published on: 2021-Jan-21",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article06.html"
             },
             {
-                title: "Prueba de titulo 7",
-                date: "Publicado el dia: "+ moment() .format("dddd") +" " + moment().date() + " de " + moment() .format("MMMM") + " del " +  moment() .format("YYYY"),
+                title: "Title 7",
+                date: "Published on: 2021-Jan-25",
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article07.html"
             },
         
         ];
+
+        let sortedData = [...posts].sort(function(obj1, obj2) {
+            return (
+              -(obj2.title < obj1.title)
+            );
+          });
+
+          console.log(sortedData);
         
-        posts.forEach((item, index) =>{
+          sortedData.forEach((item, index) =>{
             let post = `
             <article class="post">
                 <h2>${item.title}</h2>
@@ -153,7 +144,7 @@ $(function(){
                 <p>
                     ${item.content}    
                 </p>
-                <a href="${item.link}" class="button-more">Leer más</a>
+                <a href="${item.link}" class="button-more">See more</a>
             </article>
             `;
 
@@ -162,9 +153,12 @@ $(function(){
 
         });
     }
-        
-    //Scroll arriba de la Web
 
+    //Date
+    let date=moment().date() + " / " + moment() .format("MM") + " / " +  moment() .format("YYYY");
+    $('#date').append(date);
+
+    //Scroll arriba de la Web
     $(".subir").click(function(e){
         e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
         
