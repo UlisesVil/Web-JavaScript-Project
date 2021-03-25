@@ -50,6 +50,7 @@ $(function(){
     
     
     //Form Validation Contact Section
+    /*
     if(window.location.href.indexOf("contact")> -1){
             
         $("form input[name='date']").datepicker({
@@ -62,7 +63,7 @@ $(function(){
         scrollToTopOnError: true 
         });
     }
-
+    */
 
     //Slider
     let bxsliderArr=$('.bxslider');
