@@ -23,483 +23,106 @@
     margin-top: 30px;
     padding: 25px;
     background: rgba(0, 0, 0, 0.733);
+    border-radius: 10px;
 }
 
-/*Header*/
-    header{
+/*Slider*/
+.bx-wrapper, .bx-viewport{
+    height: 350px !important;
+    background-color: black !important;   
+}
+
+/*Acordeon About*/
+#acordeon{
+    margin-top: 20px;
+}
+
+/*Clock*/
+#clock{
+    display: flex;
+    width: 100%;
+    min-width: 200px;
+    height: 400px;
+    justify-content: center; 
+    align-items: center;
+    background: url(../img/reloj02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: calculator,Helvetica, Arial;
+    color: rgb(131, 0, 0);
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 1000px) {
+
+    .bx-wrapper, .bx-viewport{
+        height: fit-content !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    #content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
 
-    #date{
-        align-self: flex-end;
-        width: fit-content;
-        text-shadow: 5px 5px 5px white;
-        color: rgb(156, 156, 156);
+    #sidebar{
+        width: 100%;
+        text-align: center;
     }
 
-    #logo{
-        width: 385px;
-        height: 80px;
-        margin: 20px auto 20px;
-        font-family: "Verdana", "Arial";
-        font-size: 28px;
-        letter-spacing: 4px;
-        line-height: 75px;
-        color: white;
-        text-align: center;   
-        text-transform: uppercase;
-        border-radius: 10px;
+    #login{        
+        width: 100%;       
     }
 
-    #menu{
-        height: fit-content;
-        font-family: Helvetica, Arial;   
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        border-top-left-radius: 10px;
-       
-    }
-
-    #menu ul li:hover{
-        height: 30px;
-        border: none;
-    }
-
-    #menu ul{
-        line-height: 30px;
-        list-style: none;
-        height: fit-content;
-    }
-
-    #menu ul li{
-        height: 30px;
-        display: inline-block;
-        /*border-radius: 10px;*/
-        border-top-left-radius: 10px;
-       border-bottom-right-radius: 10px;
-    }
-
-    #menu a{
-        color: white;
-        text-decoration: none;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    
-
-/*Content*/
-    #box{
-        width: 60%;
-        float: left;
-        margin-top: 40px;
-        text-align: justify;
+    #login2{
+        width: 100%;
+        text-align: left;
     }
 
     #posts{
-        width: 65%;
-        float: left;
-        font-family: Helvetica, Arial;
-    }
-
-    .post{
-        padding: 7px;
-    }
-
-    h2{
-        font-family: Helvetica, Arial;
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-    }
-
-    .post .date{
-        display: block;
-        color: rgb(235, 225, 225);
-        margin-top: 5px;
-    }
-
-    .post p{
-        margin-top: 10px;
-        margin-bottom: 20px;
-        line-height: 20px;
-        text-align: justify;
-    }
-
-    .button-more{
-        display: block;
-        width: 70px;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-shadow: 5px 5px 5px rgb(0, 0, 0);
-        color: white;
-        font-size: 14px;
-        text-align: center;
-        text-decoration: none;
-        
-    }
-
-/*Sidebar*/
-    #sidebar{
-        width: 31%;
-        font-family: Helvetica, Arial;
-        float: right;
-    }
-
-    #sidebar h4{
-        margin-top: 30px;
-        margin-bottom: 20px;
-        text-align: center;
-        line-height: 10px;
-        color: rgb(168, 166, 166);
-        background: url("../img/lineas2.jpg") repeat-x;
-    }
-
-    #sidebar h4 span{
-        background: rgb(0, 0, 0); 
-    }
-
-    #sidebar img{
-        display: block;
-        min-width: 200px;
-        width: 60%;
-        margin: 0 auto;
-    }
-
-    #sidebar p{
-        font-size: 15px;
-        text-align: justify;
-        margin-top: 15px;
-    }
-
-    form input[type="text"],
-    form input[type="password"],
-    form input[type="email"],
-    form input[type="number"],
-    form textarea,
-    select{
-        width: 80%;
-        padding: 5px;
-        border-radius: 2px;
-        border: 1px solid #ccc;
-        margin-bottom: 10px;
-        margin-top: 5px;
-    }
-
-    form input[type="submit"]{  
-        display: block;
-        padding: 7px;
-        border: 0px solid;
-        border-radius: 3px;
-        color: white;
-        cursor: pointer;
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-shadow: 5px 5px 5px rgb(0, 0, 0);
-    }
-  
-
-    form label{
-        display: block;
-    }
-
-/*Footer*/
-    footer{
-        height: 47px;
-        width: 65.5%;
-        background: rgba(51, 51, 51, 0.70);
-        margin: 0px auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 50px;
-        font-family: Helvetica, Arial;
-        color: white;
-        line-height: 47px;
-    }
-
-/*Slider*/
-    .bx-wrapper, .bx-viewport{
-    height: 350px !important;
-    background-color: black !important;   
-    }
-
-/*Themes*/
-    #selector-theme{
-        width: fit-content;
-        height: auto;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        
-        flex-direction: row-reverse;
-        top: 243px;
-        background:rgb(0, 0, 0);
-        color: white;
-        text-align: center;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        left: -36px;
-        border-bottom:  1px solid rgb(183, 0, 255);
-        border-top:  1px solid rgb(183, 0, 255);
-        border-right:  1px solid rgb(183, 0, 255);
-        cursor: pointer;
-        transition: all 1s;
-        /*box-shadow: 0px 0px 5px 5px red;*/
-    }
-
-    #selector-theme:hover{
-        left: 0px;
-        box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
-        z-index: 9999;
-    }
-
-
-    .colorContainer{
-        width: 26px;
-        margin-left: 10px;
-        /*border: 1px solid red;*/
-    }
-
-    .textTheme{
-        width: 20px;
-        height: fit-content;
-        transform: rotate(-90deg);
-        margin-top: 32px;
-        margin-right: 5px;
-        margin-left: 5px;
-        letter-spacing: 1px;
-        /*border: 1px solid rgb(0, 38, 255);*/
-    }
-
-    #to-purple,
-    #to-blue,
-    #to-pink{
-        display: block;
-        width: 25px;
-        height: 25px;
-        border:1px solid rgb(0, 0, 0);
-        margin: 0px auto;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        cursor: pointer;
-        transition: all .7s;
-        /*border: 1px solid red;*/
-    }
-
-    #to-purple{
-        background: url(../img/themes/purple.png );
-        background-size: 25px;
-    }
-
-    #to-blue{
-        background: url(../img/themes/blue.png );
-        background-size: 25px;
-    }
-
-    #to-pink{
-        background: url(../img/themes/pink.png );
-        background-size: 25px;
-    }
-    #to-purple:hover,
-    #to-blue:hover,
-    #to-pink:hover{
-        border: 1px solid rgb(183, 0, 255);
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
-    }
-
-/*Function top*/
-    .top{
-        display: block;
-        float: right;
-        color: white;
-        text-decoration: none;
-    }
-    .top:hover{
-        color: yellowgreen;
-        text-shadow: 3px 3px 5px yellowgreen;
-    }
-
-/*Acordeon About*/
-    #acordeon{
-        margin-top: 20px;
-    }
-
-/*Clock*/
-    #clock{
-        display: flex;
         width: 100%;
-        min-width: 200px;
-        height: 400px;
-        justify-content: center; 
-        align-items: center;
-        background: url(../img/reloj02.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        font-family: calculator,Helvetica, Arial;
-        color: rgb(131, 0, 0);
-        font-size: 80px;
-        font-style: italic;
-        font-weight: bolder;
-        border-radius: 10px;
-        text-shadow: 5px 5px 5px black;
+        margin-top: 30px;
     }
 
-/*Forms*/
+    #box{
+        width: 100%;
+    }
+
     #form_contact{
         width: 100%;
-        margin-top: 15px;
-        font-family: Helvetica, Arial;
     }
+}    
 
-    #form_contact label{
-        width: 100%;
-        display: block;
-        margin-top: 5px;
-    }
-
-    #sub{
-        display: block;
-        margin-top: 5px;
-    }
-
-    .form-error{
-        float: left;
-        margin-top: 10px;
-        font-size: 14px;
-        font-style: oblique;
-        background: white;
-        color: red;
-        padding: 15px;
-        border-radius: 5px;
-        border: solid 3px;
-        border-color: gray;
-    }
-
-    #logout{
-        text-decoration: none;
-        color: red;
-    }
-
-/*Articles*/
-    h3{
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-
-    .imgArticleCenter{
-        display: flex;
-        width: 90%;
-        margin: 30px auto;
-    }
-
-    .pages{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        font-size: 15px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .fa-angle-double-left{
-        font-size: 40px;
-        float: left;
-    }
-
-    .fa-angle-double-right{
-        font-size: 40px;
-        float: left;
-    }
-
-    .prev{
-        margin: 5px;
-    }
-    .prevp{
-        float: right;
-        padding-top: 12px;
-    }
-
-    .next{
-        margin: 5px;
-    }
-    .nextp{
-        float: left;
-        padding-top: 12px;
-    }
-
-/*Responsive*/
-    @media screen and (max-width: 1000px) {
-
-        .bx-wrapper, .bx-viewport{
-                height: fit-content !important;
-            }
-
-    }
-
-    @media screen and (max-width: 900px) {
-
-        #content{
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        #sidebar{
-            width: 100%;
-            text-align: center;
-        }
-
-        #login{        
-            width: 100%;       
-        }
-
-        #login2{
-            width: 100%;
-            text-align: left;
-        }
-
-        #posts{
-            width: 100%;
-            margin-top: 30px;
-        }
-
-        #box{
-            width: 100%;
-        }
-
-        #form_contact{
-            width: 100%;
-        }
-/*
-        #sidebar img{
-            width: 300px;
-        }*/
-    }    
-
-    @media screen and (max-width: 825px) {
-        
-        #menu{
+@media screen and (max-width: 825px) {
+    
+    #menu{
         display: flex;
         flex-direction: column;
         width: 150px;
         height: fit-content;
-        }
     }
 
-    @media screen and (max-width: 600px) {
+    #footer{
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
 
-        #logo{
-            width: 100%;
-            font-size: 15px;
-        }
-    }    
+@media screen and (max-width: 600px) {
 
-
-   
+    #logo{
+        width: 100%;
+        font-size: 15px;
+    }
+}

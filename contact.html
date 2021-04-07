@@ -5,47 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project JS</title>
     <link id="ico" rel="icon" type="image/x-icon">
-    
-    <!--Styles CSS-->
+
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link id="theme" rel="stylesheet" type="text/css" href="css/purple.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/content.css"/>
+    <link rel="stylesheet" type="text/css" href="css/sidebar-forms.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/themes.css"/>
+    <link rel="stylesheet" type="text/css" href="css/articles.css"/>
     
-    <!--jQuery--> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
-    <!--JQuery UI-->
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
     <script type="text/javaScript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     
-    <!--Form Validator via cdn http://www.formvalidator.net/-->
-    <!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>-->
-    
-     <!--Moment-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es-us.js"></script>
-    <!--Scripts-->
+    
     <script type="text/javascript" src="js/sections.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/themeControl.js"></script>
 
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/94235d9528.js" crossorigin="anonymous"></script>
-    
+    <script src="https://kit.fontawesome.com/94235d9528.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <div id="selector-theme"></div>
-
     <section id="global">
-
         <div id="header"></div>
-        
         <section id="content">
-
             <div id="box">
                 <h2>Contact</h2>
-
                 <form id="form_contact" action="" method="POST">
                     <label for="name">Name</label>
                     <input type="text" name="name" data-validation="alphanumeric"/>
@@ -63,7 +55,7 @@
                     </select>
 
                     <label for="date">Date of Birth</label>
-                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/> <!--Se modifica de acuerdo al calendario de UI-->
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
 
                     <label for="years">Age</label>
                     <input type="number" name="years" data-validation="number" />
@@ -74,14 +66,10 @@
                     <input id="sub" type="submit" value="Send"/>
                 </form>
             </div>
-
             <aside id="sidebar"></aside>
             <div class="clearfix"></div>
-
         </section>
     </section>
-
     <footer id="footer"></footer>
-
 </body>
 </html>

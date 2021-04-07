@@ -1,7 +1,6 @@
 body{
-    background: url("../img/background/hexagonos.jpg");  /* usamos ../ para salir a directorio padre y despues ir a la carpeta img*/
-    background-attachment: fixed;              /* la imagen del background se quedara estatica y el scroll solo movera el resto de la pagina*/
-
+    background: url("../img/background/hexagonos.jpg");
+    background-attachment: fixed;
 }
 
 #global{   

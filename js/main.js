@@ -1,92 +1,52 @@
-//$(document).ready(function(){  ----ready --deprecated instead we use $(function(){
-//window.addEventListener("load",function(){
 $(function(){
     
-
-    //Fake Login
+    /*Login*/
     $("#login form").submit(function(){
         let form_name = $("#form_name").val();
         let form_email = $("#form_email").val();
         let form_password = $("#form_password").val();
-
         localStorage.setItem("form_name", form_name);
         localStorage.setItem("form_email", form_email);
         localStorage.setItem("form_password", form_password);
     }); 
-
     let form_name = localStorage.getItem("form_name");
-
     if(form_name !=null && form_name !="undefined"){
         let about_parrafo = $("#identity");
-        
         about_parrafo.html("<br/><strong>Bienvenido, "+" "+form_name + "  " +"</strong>"+"<br/>"+"<br/>");
         about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
-            
         $("#login").hide();
-
         $("#logout").click(function(){
             localStorage.clear();
             location.reload();
         });
     }
 
-
-
-    //Acordeon
+    /*Accordion*/
     if(window.location.href.indexOf("about")> -1 ){    
         $("#acordeon").accordion();
     }
 
-
-    //Reloj   
+    /*Clock*/   
     if(window.location.href.indexOf("clock")> -1){
-        
         setInterval(function(){
             let clock = moment().format('h:mm:ss');
             $("#clock").html(clock);
         },200);
-        //copy from https://momentjs.com/  format date
-    } 
-    
-    
-    //Form Validation Contact Section
-    /*
-    if(window.location.href.indexOf("contact")> -1){
-            
-        $("form input[name='date']").datepicker({
-            dateFormat:'dd-mm-yy'
-        });
-
-        $.validate({
-        lang: 'es',
-        errorMessagePosition: "top",
-        scrollToTopOnError: true 
-        });
     }
-    */
 
     //Slider
     let bxsliderArr=$('.bxslider');
-    console.log(bxsliderArr.length);
-    //if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1 ){
-    if(bxsliderArr.length>0){ 
-        console.log($('.bxslider'));
-
+    if(bxsliderArr.length>0){
         $('.bxslider').bxSlider({
-            
             auto: true,
             autoControls: true,
             stopAutoOnClick: true,
             pager: true,
             slideWidth: 1470
-                
         });
-        
-    }    
+    }
 
-
-    //POST
-
+    //POSTS
     if(window.location.href.indexOf("index")> -1 | window.location.href.indexOf("github")> -1){    
         var posts =[
             {
@@ -131,18 +91,15 @@ $(function(){
                 content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec massa iaculis, sagittis urna et, hendrerit lorem. Curabitur pulvinar orci arcu, quis lacinia ante sagittis eget. Morbi eget rhoncus turpis. Integer tristique magna ac fermentum fermentum. In commodo nisl eros, nec eleifend nunc dignissim nec. Phasellus commodo, dui in sodales ullamcorper, justo ligula mollis leo, quis maximus turpis nisi sodales nisi. Donec mollis vulputate pellentesque. Donec quam mi, vulputate a diam tempus, euismod efficitur leo.',
                 link: "articles/article07.html"
             },
-        
         ];
 
         let sortedData = [...posts].sort(function(obj1, obj2) {
             return (
               -(obj2.title < obj1.title)
             );
-          });
-
-          console.log(sortedData);
+        });
         
-          sortedData.forEach((item, index) =>{
+        sortedData.forEach((item, index) =>{
             let post = `
             <article class="post">
                 <h2>${item.title}</h2>
@@ -153,10 +110,8 @@ $(function(){
                 <a href="${item.link}" class="button-more">See more</a>
             </article>
             `;
-
-
-        $("#posts").append(post);   
-
+            
+            $("#posts").append(post);
         });
     }
 
@@ -164,14 +119,13 @@ $(function(){
     let date=moment().date() + " / " + moment() .format("MM") + " / " +  moment() .format("YYYY");
     $('#date').append(date);
 
-    //Scroll arriba de la Web
+    //Scroll Top
     $(".top").click(function(e){
-        e.preventDefault();          //se agrega para evitar el redireccionamiento que tiene por deafult la funcion
-        
+        e.preventDefault();
         $("html, body").animate({
-            scrollTop: 0              //El cero representa el primer pixel de la pagina
+            scrollTop: 0
         },2000);
-        return false;     //agregamos un tiempo para la animacion
+        return false;
     });
 });
 

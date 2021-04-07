@@ -1,0 +1,79 @@
+#selector-theme{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: fit-content;
+    height: auto;
+    background:rgb(0, 0, 0);
+    top: 243px;
+    left: -36px;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom:  1px solid rgb(183, 0, 255);
+    border-top:  1px solid rgb(183, 0, 255);
+    border-right:  1px solid rgb(183, 0, 255);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#selector-theme:hover{
+    left: 0px;
+    box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
+    z-index: 9999;
+}
+
+
+.colorContainer{
+    width: 26px;
+    margin-left: 10px;
+}
+
+.textTheme{
+    width: 20px;
+    height: fit-content;
+    transform: rotate(-90deg);
+    margin-top: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+
+#to-purple,
+#to-blue,
+#to-pink{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border:1px solid rgb(0, 0, 0);
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: all .7s;
+}
+
+#to-purple{
+    background: url(../img/themes/purple.png );
+    background-size: 25px;
+}
+
+#to-blue{
+    background: url(../img/themes/blue.png );
+    background-size: 25px;
+}
+
+#to-pink{
+    background: url(../img/themes/pink.png );
+    background-size: 25px;
+}
+
+#to-purple:hover,
+#to-blue:hover,
+#to-pink:hover{
+    border: 1px solid rgb(183, 0, 255);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(183, 0, 255);
+}

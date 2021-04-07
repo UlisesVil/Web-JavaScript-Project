@@ -1,15 +1,14 @@
 'use strict'
 
-//alert('soy la nueva seccion');
 $(function(){
 
+    /*Header*/
     function getArticle(){
         let extension=window.location.href.indexOf("article");
         return(extension > -1? '../' : '');
     }
 
     let extensionImg=getArticle()+'ico.png';
-    console.log(extensionImg);
     $('#ico').attr('href',extensionImg);
 
     let header= `
@@ -29,9 +28,9 @@ $(function(){
             </nav>
         </header>
     `;
-    //<div id="header"></div>
     $("#header").append(header);
     
+    /*Theme-Selector*/
     let selectorTheme=`
         <p class="textTheme">Themes</p>
         <div class="colorContainer">
@@ -40,9 +39,9 @@ $(function(){
             <div id="to-pink"></div>
         </div>
     `;
-    //<div id="selector-theme"></div>
     $('#selector-theme').append(selectorTheme);
 
+    /*Side-Bar*/
     let aside=`
         <div id="identity"></div>
         <div id="login">
@@ -70,17 +69,27 @@ $(function(){
             </p>
         </div>
     `;
-    //<aside id="sidebar"></aside>
     $("#sidebar").append(aside);
 
+    /*Footer*/
+    function date(){
+            var year= new Date().getFullYear();
+            return year;
+    }
     let footer=`
-        JavaScript Project 
-        <a href="#" class="top">
-            Top
-            <i class="fas fa-angle-double-up"></i>
-        </a>
+        <div class="footerCont">
+        <div>
+            <span>JavaScript Project Developed and designed by <a class="author" href="mailto:ulisesvil5@hotmail.com" title="E-mail Me"> Ulises Villa 
+                </a> ${date()} ©</span>
+            <span>. All rights reserved</span>
+        </div>
+        <div class="topCont">
+            <a href="#" class="top">
+                Top
+                <i class="fas fa-angle-double-up"></i>
+            </a>
+        </div>
+        </div>
     `;
-    //<footer id="footer"></footer>
     $('#footer').append(footer);
-
 });

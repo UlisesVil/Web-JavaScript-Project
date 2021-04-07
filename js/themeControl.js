@@ -22,7 +22,6 @@ $(function(){
     });
 
     let colorTheme=localStorage.getItem("color");
-    console.log(colorTheme);
     switch(colorTheme){
         case "purple":
         theme.attr("href", "css/purple.css");
@@ -42,7 +41,6 @@ $(function(){
     let clockLoc=window.location.href.indexOf("clock");
     let aboutLoc=window.location.href.indexOf("about");
     let contactLoc=window.location.href.indexOf("contact");
-
     if(indexLoc > -1){
         $('.linkMain').addClass('selected');
         $('.linkClock,.linkAbout,.linkContact').removeClass('selected');
@@ -59,21 +57,6 @@ $(function(){
         $('.linkContact').addClass('selected');
         $('.linkClock,.linkAbout,.linkMain').removeClass('selected');
     }
-/*
-    function animateSelector(){
-        $('#selector-theme').mouseenter(function(){
-            console.log("entrando");
-            $('#selector-theme').addClass('showthemes');
-            $('#selector-theme').removeClass('hidethemes');
-        });
-        $('#selector-theme').mouseleave(function(){
-            console.log("saliendo");
-            $('#selector-theme').addClass('hidethemes');
-            $('#selector-theme').removeClass('showthemes');
-        });
-    }
-    window.addEventListener('mouseover', animateSelector);
-    */
 });
 
 

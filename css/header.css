@@ -1,0 +1,58 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+#date{
+    width: fit-content;
+    align-self: flex-end;
+    text-shadow: 5px 5px 5px white;
+    color: yellowgreen;
+}
+
+#logo{
+    width: 385px;
+    height: 80px;
+    margin: 20px auto 20px;
+    font-family: "Verdana", "Arial";
+    font-size: 28px;
+    letter-spacing: 4px;
+    line-height: 75px;
+    color: white;
+    text-align: center;   
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+#menu{
+    height: fit-content;
+    font-family: Helvetica, Arial;   
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px; 
+}
+
+#menu ul li:hover{
+    height: 30px;
+    border: none;
+}
+
+#menu ul{
+    line-height: 30px;
+    list-style: none;
+    height: fit-content;
+}
+
+#menu ul li{
+    height: 30px;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}

@@ -1,0 +1,47 @@
+h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.imgArticleCenter{
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fa-angle-double-left{
+    font-size: 40px;
+    float: left;
+}
+
+.fa-angle-double-right{
+    font-size: 40px;
+    float: left;
+}
+
+.prev{
+    margin: 5px;
+}
+.prevp{
+    float: right;
+    padding-top: 12px;
+}
+
+.next{
+    margin: 5px;
+}
+
+.nextp{
+    float: left;
+    padding-top: 12px;
+}
